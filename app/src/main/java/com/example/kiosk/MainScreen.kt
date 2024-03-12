@@ -2,12 +2,14 @@ package com.example.kiosk
 
 import android.view.Menu
 import kotlinx.coroutines.selects.select
+import java.util.Collections
 
 class Kiosk() {
 
 }
 
 fun main() {
+    var listVar = ArrayList<Collections>()
     println(mainScreen())
 }
 
@@ -29,7 +31,7 @@ fun mainScreen() {
 
             1 -> BurgerMenu().showBurgerMenu()
             2 -> FrozenCustardMenu().showCustardMenu()
-            3 -> Drinks().drinksMenu()
+            3 -> DrinksMenu().showDrinksMenu()
             4 -> Beer().beerMenu()
             0 -> break
         }

@@ -4,18 +4,18 @@ interface MenuSelect {
     fun menuItem(index: Int)
 }
 
-data class BurgerType(val name: String, val price: Double)
+data class BurgerInfo(val name: String, val price: Double)
 
 //버거 정보 만들기
 class BurgerMenu : MenuSelect {
 
     //버거 정보 넘기기
     private val burgerList = listOf(
-        BurgerType("ShackBurger", 6.9),
-        BurgerType("Smoke Burger", 8.9),
-        BurgerType("Shroom Burger", 9.4),
-        BurgerType("Cheese Burger", 6.9),
-        BurgerType("HamBurger", 5.4),
+        BurgerInfo("ShackBurger", 6.9),
+        BurgerInfo("Smoke Burger", 8.9),
+        BurgerInfo("Shroom Burger", 9.4),
+        BurgerInfo("Cheese Burger", 6.9),
+        BurgerInfo("HamBurger", 5.4),
     )
 
     override fun menuItem(index: Int) {

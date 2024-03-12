@@ -4,15 +4,15 @@ interface CustardMenuSelect {
     fun custardItem(index: Int)
 }
 
-data class custardType(val name: String, val price: Double)
+data class CustardInfo(val name: String, val price: Double)
 class FrozenCustardMenu : CustardMenuSelect {
 
     val custardList = listOf(
-        custardType("Vanilla", 6.9),
-        custardType("Strawberry", 8.9),
-        custardType("Blueberry", 9.4),
-        custardType("Chocolate", 6.9),
-        custardType("Yogurt", 5.4)
+        CustardInfo("Vanilla", 6.9),
+        CustardInfo("Strawberry", 8.9),
+        CustardInfo("Blueberry", 9.4),
+        CustardInfo("Chocolate", 6.9),
+        CustardInfo("Yogurt", 5.4)
     )
 
     override fun custardItem(index: Int) {
