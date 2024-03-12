@@ -27,8 +27,8 @@ fun mainScreen() {
 
         when (selectMenu) {
 
-            1 -> BurgerMenu().showMenu()
-            2 -> FrozenCustard().frozenCustard()
+            1 -> BurgerMenu().showBurgerMenu()
+            2 -> FrozenCustardMenu().showCustardMenu()
             3 -> Drinks().drinksMenu()
             4 -> Beer().beerMenu()
             0 -> break

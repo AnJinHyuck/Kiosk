@@ -20,7 +20,7 @@ class BurgerMenu : MenuSelect {
 
     override fun menuItem(index: Int) {
 
-        if (index in 1..burgerList.size) {
+        if (index in 0..burgerList.size) {
             val selected = burgerList[index - 1]
             println("${selected.name}을 선택하셨습니다.")
 
@@ -29,7 +29,7 @@ class BurgerMenu : MenuSelect {
         }
     }
 
-    fun showMenu() {
+    fun showBurgerMenu() {
         println("[Bugers Menu]")
         burgerList.forEachIndexed { index, burgerMenu ->
             println("${index + 1}. ${burgerMenu.name}| W ${burgerMenu.price}|")
